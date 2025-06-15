@@ -31,14 +31,7 @@ This project demonstrates a minimal decentralized file sharing network where pee
 git clone https://github.com/your-username/p2p-filestorage.git
 cd p2p-filestorage
 
-# Terminal 1
-go run . --port 3000
-
-# Terminal 2
-go run . --port 7000
-
-# Terminal 3 (connects to peers)
-go run . --port 5000 --bootstrap 3000,7000
+go run . 
 ```
 
 ✅ Example Output
