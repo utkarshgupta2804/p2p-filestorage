@@ -28,6 +28,32 @@ This project demonstrates a minimal decentralized file sharing network where pee
 1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/p2p-file-storage.git
-cd p2p-file-storage
+git clone https://github.com/your-username/p2p-filestorage.git
+cd p2p-filestorage
 
+# Terminal 1
+go run . --port 3000
+
+# Terminal 2
+go run . --port 7000
+
+# Terminal 3 (connects to peers)
+go run . --port 5000 --bootstrap 3000,7000
+```
+
+✅ Example Output
+plaintext
+Copy
+Edit
+[:3000] starting fileserver...
+2025/06/16 00:17:54 TCP transport listening on port: :3000
+
+[:7000] starting fileserver...
+2025/06/16 00:17:54 TCP transport listening on port: :7000
+
+[:5000] starting fileserver...
+2025/06/16 00:17:56 TCP transport listening on port: :5000
+[:5000] attempting to connect with remote :7000
+[:5000] attempting to connect with remote :3000
+2025/06/16 00:17:56 connected with remote 127.0.0.1:3000
+2025/06/16 00:17:56 connected with remote 127.0.0.1:7000
