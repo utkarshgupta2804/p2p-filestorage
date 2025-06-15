@@ -16,15 +16,18 @@ This project demonstrates a minimal decentralized file sharing network where pee
 
 ---
 
-## 📂 Project Structure
 
-.
-├── cmd/ # Main entry point (main.go)
-├── internal/
-│ ├── transport/ # TCP transport implementation
-│ ├── storage/ # Content-addressable storage logic
-│ ├── protocol/ # Protocol handlers for file transfer
-│ └── config.go # Node configuration
-├── go.mod
-├── go.sum
-└── README.md
+## ⚙️ Requirements
+
+- [Go](https://go.dev/) **1.21+**
+
+---
+
+## 🏃‍♂️ How to Run
+
+1️⃣ **Clone the repository**
+
+```bash
+git clone https://github.com/your-username/p2p-file-storage.git
+cd p2p-file-storage
+
