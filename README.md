@@ -33,20 +33,3 @@ cd p2p-filestorage
 
 go run . 
 ```
-
-✅ Example Output
-plaintext
-Copy
-Edit
-[:3000] starting fileserver...
-2025/06/16 00:17:54 TCP transport listening on port: :3000
-
-[:7000] starting fileserver...
-2025/06/16 00:17:54 TCP transport listening on port: :7000
-
-[:5000] starting fileserver...
-2025/06/16 00:17:56 TCP transport listening on port: :5000
-[:5000] attempting to connect with remote :7000
-[:5000] attempting to connect with remote :3000
-2025/06/16 00:17:56 connected with remote 127.0.0.1:3000
-2025/06/16 00:17:56 connected with remote 127.0.0.1:7000
